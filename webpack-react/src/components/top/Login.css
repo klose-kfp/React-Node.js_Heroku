@@ -1,0 +1,32 @@
+.login-page{
+    padding-left: 2%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.login-main{
+    width: 90%;
+}
+@media (max-width: 600px) {
+    .login-page{
+        padding-left: unset;
+    }    
+    .login-main {
+      width: 100%;
+    }
+  }
+
+.login-text{
+    font-family: 'DragonQuestFC';
+    font-size: x-large;
+    line-height: 1.1; 
+}
+
+.MuiTypography-root{
+    font-size: 20px!important;
+
+}
+
+.MuiTouchRipple-root{
+    font-size: 1.3rem;
+
+}

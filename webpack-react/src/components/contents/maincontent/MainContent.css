@@ -1,0 +1,13 @@
+.maincontent{
+    height: 90%;
+}
+@media (max-width: 600px) {
+    .maincontent{
+        position:fixed;
+        top:10%;
+        width:100%;
+        height:80%;
+        z-index:50;
+        overflow-y: scroll;
+    }    
+  }

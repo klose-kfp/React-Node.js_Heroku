@@ -1,0 +1,25 @@
+.helptext{
+    height:60%;
+}
+.iftext{
+    height:40%;
+    margin-bottom: 2%;
+}
+
+#simple-tabpanel-0 .MuiBox-root{
+    padding-top: 2%!important;
+    padding-left: 4%!important;
+    padding-right: 0.2%!important;;
+    padding-bottom: 0.2%!important;;
+}
+
+#simple-tabpanel-1 .MuiBox-root{
+    padding-top: 2%!important;
+    padding-left: 4%!important;
+    padding-right: 0.2%!important;;
+    padding-bottom: 0.2%!important;;
+}
+
+.MuiTabs-scroller{
+    margin-left: 5%;
+}

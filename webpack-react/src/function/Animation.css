@@ -1,0 +1,53 @@
+.TextTyping{
+  width: 70%;
+  font-family: 'Oswald', sans-serif;
+}
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+    margin-left: 0.2%;
+    height: 100%;
+    content: "|";
+    font-size: 33px;
+    animation: typinganime .8s ease 30;
+  }
+  
+  @keyframes typinganime{
+    from{opacity:0}
+    to{opacity:1}
+  }
+
+  .save-text-typing{
+    width: 70%;
+    font-family: 'DragonQuestFC';
+    font-size: 40px;
+    }
+  @media (max-width: 600px) {
+    .TextTyping {
+      width: 100%;
+    }
+    .save-text-typing {
+      width: 90%;
+    }
+  }
+    
+
+.loading-animation{
+    width:70%;
+    background-color: aqua!important;
+	  -webkit-animation:blink 1.3s ease-in-out infinite alternate;
+    -moz-animation:blink 1.3s ease-in-out infinite alternate;
+    animation:blink 1.3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+

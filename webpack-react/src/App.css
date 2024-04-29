@@ -1,0 +1,6 @@
+body {
+  height: calc(var(--vh, 1vh) * 100); /* --vh カスタムプロパティを使用 */
+  height: 100vh; /* 通常の vh 単位の高さ */
+  --twitter-color: #50b7f5;
+  --twitter-background: black;
+}

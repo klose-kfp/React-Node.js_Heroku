@@ -1,0 +1,31 @@
+.template-nav{
+    height: 11%;
+    padding-top: 2%;
+}
+
+.template{
+    height: 89%;
+}
+
+.template-title{
+    padding-top: 1%;
+    padding-bottom: 6%;
+    font-size: 40px;
+    text-decoration-skip-ink:none;
+}
+.template-temp{
+    margin-bottom: 4%;
+}
+
+.template-text{
+    font-size: 30px;
+    padding-bottom: 4%;
+    padding-left: 33%;
+}
+
+@media (max-width: 600px) {
+    .template-text{
+        font-size: 20px;
+        padding-left: 18%;
+    }    
+  }

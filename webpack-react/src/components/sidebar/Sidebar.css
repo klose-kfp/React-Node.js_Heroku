@@ -1,0 +1,33 @@
+.sidebar-button{
+  display: block!important;
+  max-height:100vh;
+}
+.user-name{
+  padding-top: 65%!important;
+  padding-bottom: 30%!important;
+}
+
+.side-button{
+  padding-top: 20%!important;
+  padding-bottom: 20%!important;
+}
+@media (max-width: 600px) {
+  .side-button{
+    padding-top: 10%!important;
+    padding-bottom: 10%!important;
+  }    
+}
+
+.info-change-button{
+  margin-top: 120%!important;
+}
+
+.mini-font{
+  font-size: 20px!important;
+}
+
+.logout-button{
+  margin-top: 2%!important;
+  padding-top: 15%!important;
+  padding-bottom: 15%!important;
+}

@@ -1,0 +1,51 @@
+.form-zone{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.form{
+    height: 68%;
+}
+
+.btns{
+    font-size: 15px;
+    background-color: antiquewhite;
+    padding: 2px;
+}
+.addtext{
+    width:80%;
+    margin-top: 2%;
+}
+
+.addicon-animation{
+    background-color: aqua!important;
+	-webkit-animation:blink 1.3s ease-in-out infinite alternate;
+    -moz-animation:blink 1.3s ease-in-out infinite alternate;
+    animation:blink 1.3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+.MuiAccordionSummary-root.Mui-expanded {
+    min-height: 48px!important;
+}
+.MuiAccordionSummary-content{
+    background-color: #98fb98;
+    margin: 0!important;
+    opacity: 0.2,
+}
+.MuiAccordionSummary-content.Mui-expanded{
+    margin: 0!important;
+}
+.MuiAccordionSummary-expandIconWrapper svg path{
+    opacity: 0.2,
+}
