@@ -2,6 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import authHeader from "./headers";
 
+//PostはReduxを使用
 const sinupPost = createAsyncThunk(
   "user/SignupUser",
   async (payload: {

@@ -55,7 +55,7 @@ function Main({ setUserGPTs }: MainProps) {
 
   async function getGPT(Name: string) {
     if (!Name) return "";
-    const response: [] = await userService.getMessage();
+    const response: [] = await userService.getChatGPT();
 
     let filtered: GPT[] = await response.filter((box: BoxType) => {
       return box.loginuser == Name;

@@ -1,6 +1,7 @@
 import { Slice, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+//ログイン処理用
 type LoginUserInput = {
   userEmail: string;
   userPass: string;

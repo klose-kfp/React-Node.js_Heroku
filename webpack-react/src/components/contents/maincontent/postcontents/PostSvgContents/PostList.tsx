@@ -43,19 +43,6 @@ function PostList({
     .toString()
     .padStart(2, "0")}`;
 
-  // const handleDownload = async () => {
-  //   if (svgRef.current) {
-  //     console.log(svgRef.current);
-  //     // SVG 要素を検索
-  //     const svgElement = svgRef.current.querySelector("svg");
-  //     console.log(svgElement);
-
-  //     const pdfOptions = {
-  //       filename: "document.pdf",
-  //     };
-  //     html2pdf(svgElement, pdfOptions);
-  //   }
-  // };
   const handleDownload = async () => {
     if (svgRef.current) {
       const svgElement = svgRef.current.querySelector("svg");
@@ -74,9 +61,6 @@ function PostList({
             putOnlyUsedFonts: true,
           },
           margin: 0,
-          // pagebreak: {
-          //   mode: ["css", "legacy"],
-          // },
         };
         html2pdf(svgElement, pdfOptions);
         console.log(pdfOptions);
@@ -84,7 +68,7 @@ function PostList({
       }
     }
   };
-
+  //作成した図を、SVGとしてダウンロード
   const svgDownload = () => {
     if (svgRef.current) {
       const svgElement = svgRef.current.querySelector("svg");

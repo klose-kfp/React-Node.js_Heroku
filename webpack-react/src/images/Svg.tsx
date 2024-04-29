@@ -7,7 +7,7 @@ const Svg = (props: SVGProps<SVGSVGElement>) => {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    // 同時に出現するアニメーション
+    // ログインページにてテキストと同時に出現するアニメーション
     tl.to(
       ".First",
       {
@@ -19,7 +19,6 @@ const Svg = (props: SVGProps<SVGSVGElement>) => {
       "=0.5"
     );
 
-    // 別の要素を同時に出現させるアニメーション
     tl.to(
       ".Second",
       { duration: 2.5, autoAlpha: 1, opacity: 1, ease: "power4.out" },

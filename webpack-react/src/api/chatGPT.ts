@@ -1,6 +1,7 @@
 import { OpenAI } from "openai";
 
 export async function sendGPT(SelectType: string, newQuestion: string) {
+  //ChatGPTとの通信用プロファイル
   const openai = new OpenAI({
     apiKey: process.env.REACT_APP_OPENAI_API_KEY,
     dangerouslyAllowBrowser: true,
@@ -35,6 +36,7 @@ export async function sendGPT(SelectType: string, newQuestion: string) {
           newQuestion,
       },
     ],
+    //レスポンスからマーメイド構文の部分を抜粋
     functions: [
       {
         name: "mermaid_text",
@@ -53,31 +55,21 @@ export async function sendGPT(SelectType: string, newQuestion: string) {
     ],
   };
 
+  //ChatGPTとの通信用
   const chatresponse: OpenAI.Chat.Completions.ChatCompletion =
     await openai.chat.completions.create(completeOptions);
 
   if (chatresponse["choices"][0]["message"]["function_call"] != undefined) {
     const answer =
       chatresponse["choices"][0]["message"]["function_call"]["arguments"];
-    //answer : json string
+    //answerは json string
     const answerObject = JSON.parse(answer);
 
     console.log("[in]", answerObject);
+    //Mermaidが正しく認識出来る様に、波括弧を削除
     let EditAnswer = answerObject.text;
-    /*
-    EditAnswer = EditAnswer.replace(/"text": "/, "");
-    EditAnswer = EditAnswer.replace(/text": `/, "");*/
     EditAnswer = EditAnswer.replace("{", "");
     EditAnswer = EditAnswer.replace("}", "");
-    /*EditAnswer = EditAnswer.replace(/"/, "");
-    EditAnswer = EditAnswer.replace(/`/, "");
-    EditAnswer = EditAnswer.replace(/[/]/, "");
-    EditAnswer = EditAnswer.replace(/[+]/g, "");
-    //CRLF -> LFに統一
-    EditAnswer = EditAnswer.replace(/\r\n?/g, "\n");
-    //EditAnswer = EditAnswer.replace(/\\n/g, "1234567890");
-    //EditAnswer = EditAnswer.replace(/\n/g, "1234567890");
-    */
     console.log("[out]", EditAnswer);
     return EditAnswer;
   }

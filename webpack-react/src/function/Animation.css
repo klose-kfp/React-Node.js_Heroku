@@ -1,3 +1,4 @@
+  /* ログインページのアニメーション */
 .TextTyping{
   width: 70%;
   font-family: 'Oswald', sans-serif;
@@ -16,7 +17,8 @@
     to{opacity:1}
   }
 
-  .save-text-typing{
+/* 図を保存する画面のアニメーション */
+.save-text-typing{
     width: 70%;
     font-family: 'DragonQuestFC';
     font-size: 40px;
@@ -30,7 +32,7 @@
     }
   }
     
-
+/* テキスト送信後、レスポンス待ち画面のアニメーション */
 .loading-animation{
     width:70%;
     background-color: aqua!important;

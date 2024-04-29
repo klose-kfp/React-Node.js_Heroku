@@ -14,9 +14,7 @@ import type { UserState } from "@src/types/types";
 import InputMailAddress from "@src/form/InputMailAddress";
 import InputPassword from "@src/form/InputPassword";
 import LoginTypingAnimation from "@src/function/LoginTypingAnimation";
-import MobileModal from "../contents/maincontent/formslide/form/mobileformcontents/MobileModal";
 import Svg from "@src/images/Svg";
-import styled from "@emotion/styled";
 
 function Login() {
   const dispatch: AppDispatch = useDispatch();
@@ -79,10 +77,7 @@ function Login() {
             </p>
           </div>
 
-          <div
-            className="md:text-center md:pt-4"
-            // md:bg-black md:text-white"
-          >
+          <div className="md:text-center md:pt-4">
             <InputMailAddress
               value={state.email}
               onChange={(newValue) => setState({ ...state, email: newValue })}

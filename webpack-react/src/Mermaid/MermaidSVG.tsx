@@ -1,6 +1,6 @@
 import React from "react";
 import mermaid from "mermaid";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 import "./Mermaid.css";
 

@@ -90,7 +90,7 @@ function Guidance() {
           height: "50%",
           width: { xs: "45%", md: "14%" },
           marginBottom: { xs: "unset", md: "0.5%" }, // スマートフォンの場合は left を解除
-          left: { xs: "unset", md: "12%" }, // スマートフォンの場合は left を解除          //  position: "absolute", left: "0.25rem"
+          left: { xs: "unset", md: "12%" }, // スマートフォンの場合は left を解除
           zIndex: "1",
         }}
         variant="contained"

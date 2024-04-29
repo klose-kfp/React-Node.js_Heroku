@@ -6,12 +6,12 @@
 動作の概要については「動作の流れ.txt」を、<br>
 動作時の画面収録動画は[こちら](https://youtu.be/07NAbAeBqbc?si=Qslk7mJXpJko63_6)をご覧ください。<br>
 <br>
-○ 使用ツール(「⭐︎」が今回のコードで使用)<br>
+○ 使用ツール(「⭐︎」がこのコードで使用)<br>
 <br>
 ・フロントエンド<br>
 ⭐︎React (typescript)<br>
 ・バックエンド<br>
-Django (Python)<br>
+Django (Python Djoser のメール認証機能)<br>
 ⭐︎Node.js (JavaScript)<br>
 <br>
 ・AI 技術<br>

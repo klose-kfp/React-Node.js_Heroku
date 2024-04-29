@@ -7,6 +7,7 @@ type InputMailAddressProps = {
   onErrorChange: (hasError: boolean) => void;
 };
 
+//入力メールアドレスのバリデーション
 const regexpEmail =
   /^[a-zA-Z0-9_+-]+(.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/;
 

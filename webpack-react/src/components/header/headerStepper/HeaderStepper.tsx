@@ -5,7 +5,6 @@ import { Box, Step, StepLabel, Stepper } from "@mui/material";
 const steps = [
   "図の種類を選ぼう",
   "TEXTに魔法をかけよう！",
-  // "テキストを作成しGo！",
   "気に入れば画像を保存しよう！",
 ];
 

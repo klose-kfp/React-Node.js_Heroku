@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 
 import Split from "react-split";
-import SVGPost from "./PostSvgContents/PostList";
 import { GPT, MainContext, MainContextType } from "@src/components/top/Context";
 import ClickedContents from "./PostSvgContents/ClickedContents";
 import PostList from "./PostSvgContents/PostList";

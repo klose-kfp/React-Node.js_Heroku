@@ -28,7 +28,6 @@ function TypeSelectButton({
   return (
     <Fab
       variant="extended"
-      // color="success"
       className={
         context.type.selectType == type
           ? "!bg-opacity-90 !flex !flex-col !h-1/3 !mt-8 md:!mt-16 !ml-2 md:!ml-4 !pt-2 !pb-2 !text-center !cursor-pointer !bg-blue-800"

@@ -3,6 +3,7 @@ import axios, { AxiosResponse } from "axios";
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
+//ユーザー登録後の本登録用画面
 function ActivationMail() {
   const navigate = useNavigate();
   const { uid, token } = useParams();

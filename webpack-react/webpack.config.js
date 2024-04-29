@@ -4,7 +4,6 @@ const Dotenv = require("dotenv-webpack");
 const dotenvFilename = path.resolve(__dirname, "./.env");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const customEnvironment = process.env.CUSTOM_ENV
   ? process.env.CUSTOM_ENV
@@ -51,9 +50,6 @@ module.exports = {
       },
     ],
   },
-  // optimization: {
-  //   minimizer: [new CssMinimizerPlugin()],
-  // },
   output: {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",
@@ -72,7 +68,6 @@ module.exports = {
       path: path.resolve(__dirname, `.env.${customEnvironment}`),
     }),
     new webpack.DefinePlugin({
-      // "process.env.NODE_ENV": JSON.stringify("production"),
       "process.env.MY_ENV": JSON.stringify(process.env.MY_ENV),
     }),
 
