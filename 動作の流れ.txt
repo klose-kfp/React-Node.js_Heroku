@@ -3,10 +3,10 @@
 (現状ではシーケンス図のみの実装ですが、色んな図が作成可能です)
 
 → ユーザーがテキストを入力
-→ 入力されたテキストを含めた、ChatGPT API送信用の文章を作成
+→ 入力されたテキストを含めた、ChatGPT API送信用のプロンプトを作成
 (frontend_Project/webpack-babel-react-env/src/api/chatGPT.ts で行っています)
 
-→ 作成した文章をReactからChatGPT APIに送信
+→ 作成したプロンプトをReactからChatGPT APIに送信
 (参考: https://enterprisezine.jp/article/detail/18404 )
 
 → ChatGPT APIから、マーメイド構文が返ってくる
@@ -16,8 +16,8 @@
 (参考: https://future-architect.github.io/articles/20221027a/ )
 
 → 作成した図にタイトルを付け、PDF化やサイト内保存(Django)を行う
-(サイト内保存では、入力したテキスト、マーメイド構文等を保存します)
+(サイト内保存では、図だけでなく入力したテキストやマーメイド構文も保存します)
 
 
-(簡単な改良を加えればシーケンス図だけでなく色んな図を作成可能です
+(簡易な改良を加えればシーケンス図だけでなく各種UMLを作成可能です
 参考: https://dev.classmethod.jp/articles/chatgpt-mermaid-diagram/ )

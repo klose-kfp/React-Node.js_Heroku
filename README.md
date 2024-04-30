@@ -15,7 +15,7 @@ Django (Python Djoser のメール認証機能)<br>
 ⭐︎Node.js (JavaScript)<br>
 <br>
 ・AI 技術<br>
-⭐︎ChatGPT<br>
+⭐︎ChatGPT API<br>
 ⭐︎Mermaid<br>
 <br>
 ・Docker<br>
@@ -23,7 +23,7 @@ Docker Compose<br>
 (フロントエンド(nginx)・バックエンド のコンテナ 2 つ)<br>
 ・サーバー<br>
 AWS<br>
-(インターネット → CloudFront → EC2 → nginx → Docker Compose<br>
+(インターネット → ELB → EC2 → nginx → Docker Compose<br>
 ACM の証明書で HTTPS 化)<br>
 ⭐︎Heroku<br>
 ・ドメイン<br>
