@@ -11,7 +11,6 @@ import UserUpdateSuccess from "./components/top/UserUpdateSuccess";
 import ErrorPage from "./error/ErrorPage";
 import FormSlide from "./components/contents/maincontent/formslide/FormSlide";
 import PostContents from "./components/contents/maincontent/postcontents/PostContents";
-import ActivationMail from "./mail/ActivationMail";
 import Context from "./components/top/Context";
 import { useEffect } from "react";
 
@@ -59,7 +58,6 @@ function App() {
         <Route path="/logout" element={<Logout />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signup/success" element={<SignupSuccess />} />
-        <Route path="/activate/:uid/:token" element={<ActivationMail />} />
         <Route path="/userupdate" element={<UserUpdate />} />
         <Route path="/userupdate/success" element={<UserUpdateSuccess />} />
         <Route path="/userdelete" element={<UserDelete />} />
