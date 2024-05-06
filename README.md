@@ -1,7 +1,10 @@
 # F-IT 〜first-it〜
 
-# テキストからシーケンス図など<br>各種 UML を作成する Web アプリ
+# 【地味に面倒な「UML(資料図)作成」からの解放 必要なのはテキスト入力のみ】
 
+テキストからシーケンス図など<br>
+各種 UML を作成する Web アプリ<br>
+<br>
 このプロジェクトは、複数の AI を活用した Web アプリケーションです。<br>
 動作の概要については「動作の流れ.txt」を、<br>
 動作時の画面収録動画は[こちら](https://youtu.be/07NAbAeBqbc?si=Qslk7mJXpJko63_6)をご覧ください。<br>
@@ -40,8 +43,8 @@ Heroku アドオン (⭐︎Heroku Postgres ⭐︎ClearDB)<br>
 ⭐︎Bootstrap<br>
 ⭐︎Material UI<br>
 <br>
-・テストツール
-Postman
+・テストツール<br>
+Postman<br>
 <br>
 This software is released under the MIT License, see LICENSE.txt.<br>
 <br>
